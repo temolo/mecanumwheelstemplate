@@ -28,9 +28,10 @@ let distance = 0
 let speedNormal = 0
 basic.showIcon(IconNames.Surprised)
 speedNormal = 30
+let distanceLimit = 40
 basic.forever(function () {
     distance = mecanumRobot.ultra()
-    if (distance < 20) {
+    if (distance < distanceLimit) {
         car_back()
         mecanumRobot.state(MotorState.stop)
         basic.pause(500)
