@@ -1,5 +1,5 @@
 {
-    "name": "MecanumWheelsTemplate",
+    "name": "MecanumAvoidObstacles",
     "description": "",
     "dependencies": {
         "core": "*",
