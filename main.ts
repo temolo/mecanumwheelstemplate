@@ -26,7 +26,7 @@ let distance_RIGHT = 0
 let distance_LEFT = 0
 let distance = 0
 let speedNormal = 0
-basic.showIcon(IconNames.EigthNote)
+basic.showIcon(IconNames.Pitchfork)
 speedNormal = 30
 let distanceLimit = 40
 let LEFTTurnAngle = 135
