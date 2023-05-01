@@ -1,31 +1,33 @@
 function car_back () {
-    mecanumRobot.Motor(LR.Upper_left, MD.Back, 50)
-    mecanumRobot.Motor(LR.Lower_left, MD.Back, 50)
-    mecanumRobot.Motor(LR.Upper_right, MD.Back, 50)
-    mecanumRobot.Motor(LR.Lower_right, MD.Back, 50)
+    mecanumRobot.Motor(LR.Upper_left, MD.Back, speedNormal)
+    mecanumRobot.Motor(LR.Lower_left, MD.Back, speedNormal)
+    mecanumRobot.Motor(LR.Upper_right, MD.Back, speedNormal)
+    mecanumRobot.Motor(LR.Lower_right, MD.Back, speedNormal)
 }
 function car_left () {
-    mecanumRobot.Motor(LR.Upper_left, MD.Back, 50)
-    mecanumRobot.Motor(LR.Lower_left, MD.Back, 50)
-    mecanumRobot.Motor(LR.Upper_right, MD.Forward, 50)
-    mecanumRobot.Motor(LR.Lower_right, MD.Forward, 50)
+    mecanumRobot.Motor(LR.Upper_left, MD.Back, speedNormal)
+    mecanumRobot.Motor(LR.Lower_left, MD.Back, speedNormal)
+    mecanumRobot.Motor(LR.Upper_right, MD.Forward, speedNormal)
+    mecanumRobot.Motor(LR.Lower_right, MD.Forward, speedNormal)
 }
 function car_forward () {
-    mecanumRobot.Motor(LR.Upper_left, MD.Forward, 50)
-    mecanumRobot.Motor(LR.Lower_left, MD.Forward, 50)
-    mecanumRobot.Motor(LR.Upper_right, MD.Forward, 50)
-    mecanumRobot.Motor(LR.Lower_right, MD.Forward, 50)
+    mecanumRobot.Motor(LR.Upper_left, MD.Forward, speedNormal)
+    mecanumRobot.Motor(LR.Lower_left, MD.Forward, speedNormal)
+    mecanumRobot.Motor(LR.Upper_right, MD.Forward, speedNormal)
+    mecanumRobot.Motor(LR.Lower_right, MD.Forward, speedNormal)
 }
 function car_right () {
-    mecanumRobot.Motor(LR.Upper_left, MD.Forward, 50)
-    mecanumRobot.Motor(LR.Lower_left, MD.Forward, 50)
-    mecanumRobot.Motor(LR.Upper_right, MD.Back, 50)
-    mecanumRobot.Motor(LR.Lower_right, MD.Back, 50)
+    mecanumRobot.Motor(LR.Upper_left, MD.Forward, speedNormal)
+    mecanumRobot.Motor(LR.Lower_left, MD.Forward, speedNormal)
+    mecanumRobot.Motor(LR.Upper_right, MD.Back, speedNormal)
+    mecanumRobot.Motor(LR.Lower_right, MD.Back, speedNormal)
 }
 let distance_RIGHT = 0
 let distance_LEFT = 0
 let distance = 0
-basic.showIcon(IconNames.Ghost)
+let speedNormal = 0
+basic.showIcon(IconNames.Surprised)
+speedNormal = 30
 basic.forever(function () {
     distance = mecanumRobot.ultra()
     if (distance < 20) {
